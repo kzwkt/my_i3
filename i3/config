@@ -1,4 +1,5 @@
-font pango:xos4 Terminus medium 5
+font pango:xos4 Terminus medium 8
+# application launcher 
 set $mode_launcher Launch:[f]irefox [p]cmanfm 
 bindsym $mod+o mode "$mode_launcher"
 mode "$mode_launcher" {
@@ -8,6 +9,7 @@ mode "$mode_launcher" {
     bindsym Return mode "default"
 }
 
+# logout,suspend, hibernate,lock feature via mod+l
 set $Locker i3lock -d -i ~/wall/2.png -e -p win -f
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown, (b) off-screen
 mode "$mode_system" {
